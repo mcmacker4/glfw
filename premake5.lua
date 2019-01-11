@@ -31,6 +31,7 @@ project "GLFW"
 
     
     filter "system:windows"
+        staticruntime "On"
         defines { "_GLFW_WIN32" }
         systemversion "latest"
         files {
