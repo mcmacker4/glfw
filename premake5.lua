@@ -12,11 +12,13 @@ project "GLFW"
 
     files {
         "src/context.c",
+        "src/egl_context.c",
         "src/init.c",
         "src/input.c",
         "src/monitor.c",
         "src/vulkan.c",
-        "src/window.c"
+        "src/window.c",
+        "src/osmesa_context.c"
     }
 
     includedirs {
