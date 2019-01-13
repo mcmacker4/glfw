@@ -1,6 +1,6 @@
 buildDir = "%{wks.location}/Build/%{cfg.system}-%{cfg.buildcfg}/%{prj.name}/"
 
-project "GLFW"
+project "glfw"
 
     kind "StaticLib"
     
