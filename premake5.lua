@@ -51,11 +51,20 @@ project "GLFW"
     
     filter "system:linux"
         defines { "_GLFW_X11" }
+        buildoptions { "-fPIC" }
         files {
             "src/glx_context.c",
             "src/x11_init.c",
             "src/x11_monitor.c",
             "src/x11_window.c",
-            "src/linux_joystick.c"
+            "src/xkb_unicode.c",
+            "src/linux_joystick.c",
+            "src/posix_thread.c",
+            "src/posix_time.c"
+        }
+        links {
+            "X11",
+            "m",
+            "rt"
         }
 
