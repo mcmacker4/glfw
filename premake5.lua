@@ -33,8 +33,10 @@ project "glfw"
 
     
     filter "system:windows"
-        staticruntime "On"
-        defines { "_GLFW_WIN32" }
+        defines {
+			"_GLFW_WIN32",
+			"_CRT_SECURE_NO_WARNINGS"
+		}
         systemversion "latest"
         files {
             "src/wgl_context.c",
